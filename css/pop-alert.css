@@ -8,7 +8,7 @@ body, html {
     height:100%;
 }
 
-button:focus {
+button.button:focus {
     outline:none;   
 }
 
@@ -180,6 +180,10 @@ button:focus {
     }
     
     .pop p {
+        font-size:1em;   
+    }
+    
+    .button {
         font-size:1em;   
     }
 }

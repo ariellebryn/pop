@@ -152,7 +152,7 @@ td {
     }
     
     .row .doc {
-        flex-direction:column;
+        flex-direction:column !important;
         width:100%;
     }
 }
