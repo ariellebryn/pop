@@ -76,6 +76,7 @@ h4 a {
     box-sizing:border-box;
     padding-top:1%;
     text-align:center;
+    overflow-x:hidden;
 }
 
 .row {
@@ -148,5 +149,10 @@ td {
     
     .demo {
         width:50%;   
+    }
+    
+    .row .doc {
+        flex-direction:column;
+        width:100%;
     }
 }

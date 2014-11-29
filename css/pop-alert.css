@@ -168,3 +168,18 @@ button:focus {
 .success:active {
     background-color:#65A636;   
 }
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    .pop {
+        width:70%;   
+    }
+    
+    .pop span {
+        font-size:1.2em;
+    }
+    
+    .pop p {
+        font-size:1em;   
+    }
+}
