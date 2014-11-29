@@ -1,0 +1,170 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+body, html {
+    margin:0;
+    padding:0;
+    width:100%;
+    min-height:1500px;
+    height:100%;
+}
+
+button:focus {
+    outline:none;   
+}
+
+.cover {
+    position:fixed;
+    background-color:rgba(0,0,0,0);
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:100;
+    transition:.5s;
+}
+
+.on {
+    background-color:rgba(0,0,0,0.9); 
+}
+
+.pop {
+    font-family:"Open Sans",sans-serif;
+    position:relative;
+    height:auto;
+    width:500px;
+    display:flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    margin:0 auto;
+    border-radius:15px;
+    border:5px solid white;
+    color:white;
+    text-align:center;
+    top:-1000px;
+    transition:.8s;
+}
+
+.down {
+    top:20%;
+}
+
+.bar {
+    height:15px;
+    top:0;
+    position:absolute;
+    width:100%;
+    left:0;
+    border-radius:9px 9px 0 0;
+    transition:.5s;
+}
+
+.pop-content {
+    padding-top:35px;
+    padding-bottom:25px;
+    width:80%;
+    height:auto;
+    position:relative;
+    margin:auto;
+}
+
+.pop span {
+    font-size:2em;
+    line-height:1em;
+}
+
+.pop p {
+    font-size:1.2em;   
+}
+
+.button-row {
+    display:flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction:row;
+    ms-flex-direction:row;
+    margin-top:10px;
+    justify-content:space-around;
+    ms-flex-pack:space-around;
+    text-align:center;
+    width:100%;
+    height:auto;
+}
+
+.button {
+    position:relative;
+    display:inline-block;
+    margin:0 auto;
+    width:40%;
+    height:auto;
+    font-size:1.2em;
+    color:white;
+    text-align:center;
+    border-radius:8px;
+    border:none;
+    padding:8px;
+    margin-top:10px;
+}
+
+.button:hover {
+    cursor:pointer;   
+}
+
+.message {
+    background-color:#55BFE8; 
+}
+
+.message:hover {
+    background-color:#47A0C2;
+}   
+
+.message:active {
+    background-color:#3D88A6;   
+}
+
+.dull {
+    background-color:#B0B0AF;   
+}
+
+.dull:hover {
+    background-color:#919191;   
+}
+
+.dull:active {
+    background-color:#858585;   
+}
+
+.error {
+    background-color:#F03F49;   
+}
+
+.error:hover {
+    background-color:#BD313A;   
+}
+
+.error:active {
+    background-color:#96272E;   
+}
+
+.confirm {
+    background-color:#EBC329;   
+}
+
+.confirm:hover {
+    background-color:#D9B426;   
+}
+
+.confirm:active {
+    background-color:#BF9F21;   
+}
+
+.success {
+    background-color:#8AE34A;   
+}
+
+.success:hover {
+    background-color:#6EB53B;   
+}
+
+.success:active {
+    background-color:#65A636;   
+}
