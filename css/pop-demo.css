@@ -151,8 +151,11 @@ td {
         width:50%;   
     }
     
-    .row .doc {
+    .doc {
         flex-direction:column !important;
-        width:100%;
+    }
+    
+    .doc .demo {
+        width:90%;   
     }
 }

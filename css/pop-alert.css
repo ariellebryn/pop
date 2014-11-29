@@ -184,6 +184,7 @@ button.button:focus {
     }
     
     .button {
-        font-size:1em;   
+        font-size:1em;  
+        width:50%;
     }
 }
