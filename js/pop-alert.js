@@ -8,8 +8,8 @@
 */
 function closePop(cover, pop) {
     "use strict";
-    pop.classList.remove("down");
-    cover.classList.remove("on");
+    pop.classList.remove("pop-down");
+    cover.classList.remove("pop-on");
     setTimeout(function(){document.getElementsByTagName('body')[0].removeChild(cover);}, 200);
 }
 
@@ -50,7 +50,7 @@ function popAlert (type, title, message, button_affirm, affirm_function, button_
     }
 
     var cover = document.createElement('div');
-    cover.className = "cover";
+    cover.className = "pop-cover";
 
     var pop = document.createElement('div');
     pop.className = "pop";
@@ -58,8 +58,8 @@ function popAlert (type, title, message, button_affirm, affirm_function, button_
     // Apply bar styles
     if (type != "message") {
        var bar = document.createElement('div');
-       bar.classList.add("bar");
-       bar.classList.add(type);
+       bar.classList.add("pop-bar");
+       bar.classList.add("pop-" + type);
        pop.appendChild(bar);
     }
 
@@ -86,13 +86,13 @@ function popAlert (type, title, message, button_affirm, affirm_function, button_
 
     // Add buttons
     var b_row = document.createElement('div');
-    b_row.className = "button-row";
+    b_row.className = "pop-button-row";
     content.appendChild(b_row);
 
     if (button_dull) {
         var b_dull = document.createElement('button');
-        b_dull.classList.add("button");
-        b_dull.classList.add("dull");
+        b_dull.classList.add("pop-button");
+        b_dull.classList.add("pop-dull");
         b_dull.innerHTML = button_dull;
 
         b_dull.addEventListener("click", function() {
@@ -105,12 +105,12 @@ function popAlert (type, title, message, button_affirm, affirm_function, button_
     }  
 
     var b_affirm = document.createElement('button');
-    b_affirm.classList.add("button");
-    b_affirm.classList.add(type);
+    b_affirm.classList.add("pop-button");
+    b_affirm.classList.add("pop-" + type);
     if (button_affirm) {
         b_affirm.innerHTML = button_affirm;
     } else {
-        b_affirm.innerHTML = "OKAY";
+        b_affirm.innerHTML = "Okay";
     }
 
     b_affirm.addEventListener("click", function() {
@@ -120,8 +120,8 @@ function popAlert (type, title, message, button_affirm, affirm_function, button_
             setTimeout(function(){
                 bar.style.height = "15px";
                 bar.style.borderRadius = "9px 9px 0 0";
-                bar.classList.remove("confirm");
-                bar.classList.add("success");
+                bar.classList.remove("pop-confirm");
+                bar.classList.add("pop-success");
                 var success = affirm_function;
                 sp_title.innerHTML = success.title;
                 p_message.innerHTML = success.message;
@@ -129,8 +129,8 @@ function popAlert (type, title, message, button_affirm, affirm_function, button_
                     b_row.removeChild(b_dull);   
                 }
                 b_affirm.innerHTML = success.affirm_button;
-                b_affirm.classList.remove("confirm");
-                b_affirm.classList.add("success");
+                b_affirm.classList.remove("pop-confirm");
+                b_affirm.classList.add("pop-success");
 
                 // New function on success confirmation
                 b_affirm.addEventListener("click", function() {
@@ -155,7 +155,7 @@ function popAlert (type, title, message, button_affirm, affirm_function, button_
 
     // Transition
     setTimeout(function () {
-        cover.classList.add("on");
-        pop.classList.add("down");}, 100);
+        cover.classList.add("pop-on");
+        pop.classList.add("pop-down");}, 100);
 
 }

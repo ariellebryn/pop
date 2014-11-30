@@ -12,7 +12,7 @@ button.button:focus {
     outline:none;   
 }
 
-.cover {
+.pop-cover {
     position:fixed;
     background-color:rgba(0,0,0,0);
     width:100%;
@@ -23,7 +23,7 @@ button.button:focus {
     transition:.5s;
 }
 
-.on {
+.pop-on {
     background-color:rgba(0,0,0,0.9); 
 }
 
@@ -44,11 +44,11 @@ button.button:focus {
     transition:.8s;
 }
 
-.down {
+.pop-down {
     top:20%;
 }
 
-.bar {
+.pop-bar {
     height:15px;
     top:0;
     position:absolute;
@@ -76,7 +76,7 @@ button.button:focus {
     font-size:1.2em;   
 }
 
-.button-row {
+.pop-button-row {
     display:flex;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -90,7 +90,7 @@ button.button:focus {
     height:auto;
 }
 
-.button {
+.pop-button {
     position:relative;
     display:inline-block;
     margin:0 auto;
@@ -105,67 +105,67 @@ button.button:focus {
     margin-top:10px;
 }
 
-.button:hover {
+.pop-button:hover {
     cursor:pointer;   
 }
 
-.message {
+.pop-message {
     background-color:#55BFE8; 
 }
 
-.message:hover {
+.pop-message:hover {
     background-color:#47A0C2;
 }   
 
-.message:active {
+.pop-message:active {
     background-color:#3D88A6;   
 }
 
-.dull {
+.pop-dull {
     background-color:#B0B0AF;   
 }
 
-.dull:hover {
+.pop-dull:hover {
     background-color:#919191;   
 }
 
-.dull:active {
+.pop-dull:active {
     background-color:#858585;   
 }
 
-.error {
+.pop-error {
     background-color:#F03F49;   
 }
 
-.error:hover {
+.pop-error:hover {
     background-color:#BD313A;   
 }
 
-.error:active {
+.pop-error:active {
     background-color:#96272E;   
 }
 
-.confirm {
+.pop-confirm {
     background-color:#EBC329;   
 }
 
-.confirm:hover {
+.pop-confirm:hover {
     background-color:#D9B426;   
 }
 
-.confirm:active {
+.pop-confirm:active {
     background-color:#BF9F21;   
 }
 
-.success {
+.pop-success {
     background-color:#8AE34A;   
 }
 
-.success:hover {
+.pop-success:hover {
     background-color:#6EB53B;   
 }
 
-.success:active {
+.pop-success:active {
     background-color:#65A636;   
 }
 
@@ -183,7 +183,7 @@ button.button:focus {
         font-size:1em;   
     }
     
-    .button {
+    .pop-button {
         font-size:.9em;  
         width:50%;
     }
