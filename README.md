@@ -12,3 +12,7 @@ There are four possible alerts:<br />
 4. "Success" alert<br />
 
 <a href="http://ariellebryn.github.io/pop/">Demo</a>
+
+Files necessary:<br />
+1. CSS File (pop-alert.css OR pop-minify.css)<br />
+2. JS File (pop-alert.js OR pop-minify.js)
